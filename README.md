@@ -38,6 +38,19 @@ reduce(
 )
 ```
 
+### Example of usage
+
+Let's demonstrate how to use the `capitalizePhrase` function in a dataflow scenario:
+
+Suppose you have a dataset with a column `company_names` that contains company names in lowercase, and you want to capitalize each name while ignoring certain acronyms like 'LLC' and 'INC'. Here's how you could apply the `capitalizePhrase` function:
+
+1. Add a Derived Column transformation in your dataflow.
+2. Use the following expression to capitalize the company names:
+
+```dataflow
+capitalizePhrase('GOOGLE LLC', '^(LLC|INC)$', ' ') -> Google LLC
+```
+
 ### Usage
 
 To use a function from this collection in your ADF dataflow, copy the expression provided for the function and integrate it into your dataflow script. Ensure that you replace the parameter placeholders (i1, i2, i3) with your actual data or variables.
