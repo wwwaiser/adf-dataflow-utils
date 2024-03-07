@@ -1,0 +1,21 @@
+/*
+  i1: String - Phrase to capitaliza
+  i2: String - RegExp to identify words to ignore and don't capitalize
+  i3: String - Delimiter. Symbol to split the phrase by
+
+  Return: String - Capitalized string
+*/
+
+reduce(
+    map(
+        split(i1, coalesce(i3, ' ')),
+        iif(
+            regexMatch(#item, coalesce(i2, '^(LLC|INC)$')),
+            #item,
+            concat(left(upper(#item), 1), right(lower(#item), length(#item) - 1))
+        )
+    ),
+    '',
+    #acc + ' ' + #item,
+    #result
+)
