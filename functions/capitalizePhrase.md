@@ -1,4 +1,4 @@
-### 1. `capitalizePhrase`
+### `capitalizePhrase`
 
 This function capitalizes the initial letter of each word in a given phrase, allowing for exceptions and customizable delimiters.
 
