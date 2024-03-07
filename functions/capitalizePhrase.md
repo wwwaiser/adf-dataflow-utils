@@ -40,5 +40,7 @@ Suppose you have a dataset with a column `company_names` that contains company n
 2. Use the following expression to capitalize the company names:
 
 ```dataflow
-capitalizePhrase('GOOGLE LLC', '^(LLC|INC)$', ' ') -> Google LLC
+capitalizePhrase('GOOGLE LLC', '^(LLC|INC)$', ' ')
 ```
+
+The output of this function call will be `Google LLC`
