@@ -6,7 +6,7 @@ Welcome to this repository where we collect and share useful functions for Azure
 
 Currently, we have the following function available:
 
-### 1. [capitalizePhrase](https://github.com/wwwaiser/adf-dataflow-utils/blob/main/functions/capitalizePhrase)
+### 1. [capitalizePhrase](https://github.com/wwwaiser/adf-dataflow-utils/blob/main/functions/capitalizePhrase.md)
 
 ### Usage
 
